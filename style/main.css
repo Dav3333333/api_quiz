@@ -1,0 +1,64 @@
+@import "./base/all.css";
+@import "./components/all.css";
+@import "./layouts/all.css";
+
+
+.visible{
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+    width: min-content;
+    height: 100vh;
+    background-color: var(--color-white--smoke);
+    position: fixed;
+}
+
+.read__more{
+    padding: 1rem;
+    background-color: var(--color-blue--dark);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#menu-btn{
+    display: none;
+    width: min-content;
+}
+
+.nav_change_display{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+@media screen and (max-width:900px) {
+    .element-hidden{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 80vw;
+        padding: 1rem;
+        background-color: var(--color-white--smoke);
+    }
+
+    .search-form {
+        /* top: 6rem; */
+        top: 2rem;
+        width: 40%;
+        display: none;
+    }
+
+    .search-form .text-input{
+        width: 70%;
+    }
+
+    #menu-btn{
+        display: block;
+        cursor: pointer;
+    }
+}

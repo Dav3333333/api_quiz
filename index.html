@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Pays du monde</title>
+  </head>
+  <body>
+    <header class="header">
+      <span id="menu-btn" class="material-icons menu-btn">menu</span>&nbsp;
+      <h3>Keep Food</h3>
+      <nav class="nav element-hidden">
+        <a class="nav__item text text--sm nav__item--selected" href="#all"
+          >Tous</a
+        >
+        <a class="nav__item text text--sm" href="#Vegetarian">Végétarien</a>
+        <a class="nav__item text text--sm" href="#Vegan">Végan</a>
+        <a class="nav__item text text--sm" href="#Ketogenic">Cétogène</a>
+        <a class="nav__item text text--sm" href="#Paleo">Paléolithique</a>
+        <a class="nav__item text text--sm" href="#Whole30">Whole30</a>
+      </nav>
+    </header>
+    <form class="search-form">
+      <span class="material-icons">search</span>&nbsp;<input
+        class="text-input"
+        type="text"
+        placeholder="Nom du pays"
+      />
+    </form>
+    <div class="spinner"></div>
+    <section class="section">
+      <!-- <div class="card">
+        <div class="card__img"></div>
+        <div class="card__details">
+          <p class="text text--md text--bold">PIZZA</p>
+          <p class="text text--sm text--secondary">
+            <span class="material-icons">star_rate</span>&nbsp;
+          </p>
+          <p class="text text--sm text--secondary">
+            <span class="material-icons">restaurant</span>&nbsp;
+          </p>
+          <p class="text text--sm text--secondary">
+            <span class="material-icons"><button class="btn-read__more">READ MORE</button></span>&nbsp;
+          </p>
+        </div>
+      </div> -->
+    <script src="./app.js"></script>
+    <script defer src="./menu.js"></script>
+  </body>
+</html>

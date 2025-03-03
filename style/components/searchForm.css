@@ -1,0 +1,37 @@
+.search-form {
+  padding: 0.5rem 2rem;
+  background-color: var(--color-white--pure);
+  border-radius: 6rem;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  z-index: 9999;
+}
+
+.text-input {
+  border: none;
+  outline: none;
+  padding: 1rem 0;
+  width: 30rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.search-form:has(.text-input:focus) {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 599px) {
+  .search-form {
+    /* top: 6rem; */
+    top: 2rem;
+  }
+  .text-input {
+    width: 22rem;
+    padding: 0.5rem 0;
+  }
+}

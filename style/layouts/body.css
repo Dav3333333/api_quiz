@@ -1,0 +1,31 @@
+.header {
+  flex: 0 0 7%;
+}
+
+.section {
+  flex: 0 0 88%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 10rem;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+
+.footer {
+  flex: 0 0 5%;
+}
+
+.body {
+  position: relative;
+}
+
+@media screen and (max-width: 599px) {
+  .section {
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
+  }
+}

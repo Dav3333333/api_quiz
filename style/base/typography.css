@@ -1,0 +1,31 @@
+.text {
+  color: var(--color-black--dark);
+}
+
+.text--thin {
+  font-weight: 200;
+}
+
+.text--regular {
+  font-weight: 400;
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.text--sm {
+  font-size: 1.2rem;
+}
+
+.text--md {
+  font-size: 1.6rem;
+}
+
+.text--lg {
+  font-size: 2rem;
+}
+
+.text--secondary {
+  color: var(--color-black--light);
+}

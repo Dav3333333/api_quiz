@@ -1,0 +1,10 @@
+.img {
+  display: inline-block;
+}
+
+.card__img {
+  width: 100%;
+  background-color: rebeccapurple;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}

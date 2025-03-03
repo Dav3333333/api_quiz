@@ -1,0 +1,66 @@
+.card {
+  width: 25rem;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.6rem;
+}
+
+.card__details > .text--secondary {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.card__details > .text--secondary:not(:last-child) {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 599px) {
+  .card {
+    width: 14rem;
+    border-radius: 0.5rem;
+  }
+  .card__details {
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
+  .card__details > .text--bold {
+    font-size: 1rem;
+  }
+  .card__details > .text--secondary {
+    padding: 0.25rem 0;
+    font-size: 0.8rem;
+  }
+  .card__details > .text--secondary > .material-icons {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 714px) {
+  .card {
+    width: 19rem;
+    border-radius: 1rem;
+  }
+  .card__details {
+    padding: 1rem;
+    gap: 0.25rem;
+  }
+  .card__details > .text--bold {
+    font-size: 1.4rem;
+  }
+  .card__details > .text--secondary {
+    padding: 0.25rem 0;
+    font-size: 1rem;
+  }
+  .card__details > .text--secondary > .material-icons {
+    font-size: 1rem;
+  }
+}
